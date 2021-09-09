@@ -107,7 +107,6 @@ delAll.addEventListener("click", () => {
 //редактирование todo
 edit.addEventListener("click", () => {
 
-	console.log("11" +selectedToDo);
 	if(selectedToDo == null) {
 		alert("ToDo is not selected");
 		return ;
