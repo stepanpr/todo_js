@@ -98,6 +98,7 @@ delAll.addEventListener("click", () => {
 			delete todos[it];
 
 		}
+		selectedToDo = null;
 	}
 	// ul.innerHTML = ''; //более короткий способ
 });
@@ -106,6 +107,7 @@ delAll.addEventListener("click", () => {
 //редактирование todo
 edit.addEventListener("click", () => {
 
+	console.log("11" +selectedToDo);
 	if(selectedToDo == null) {
 		alert("ToDo is not selected");
 		return ;
@@ -114,6 +116,7 @@ edit.addEventListener("click", () => {
 	if (edited === null)
 		return ;
 	todos[selectedToDo].textContent = edited;
+	
 });
 
 
