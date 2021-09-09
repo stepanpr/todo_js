@@ -15,7 +15,7 @@
 			<div class="todo__list"> <!-- list -->
 
 				<ul class="todo__list-todos">
-					<li class="todo__list-todos__item">default todo</li>
+					<li class="todo__list-todos__item" id="todo0" onclick="selectToDo(this)">default ToDo</li>
 				</ul>
 			</div>
 
@@ -23,8 +23,13 @@
 			<div class="todo__form"> <!-- form -->
 				
 				<form action="#">
-					<input type="text" class="todo__form-newtodo" placeholder="new ToDo">
+					<input type="text" class="todo__form-newtodo" placeholder="enter a new ToDo...">
 					<button id="addnew" class="todo__form-button">Add new ToDo</button>
+					<button id="delete" class="todo__form-button">Delete</button>
+					<button id="delete_all" class="todo__form-button">Delete all</button>
+					<button id="edit" class="todo__form-button">Edit</button>
+					<button id="complete" class="todo__form-button">Set as complete</button>
+
 				</form>
 
 			</div>
